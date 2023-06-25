@@ -1,8 +1,8 @@
-*** Weatherapp ***
+***Weatherapp***
 
 ### To run this app locally with Node.js, follow these steps:
 
-1. Install dependencies: Run npm i && npm start in both the backend and frontend services.
+1. Install dependencies: Run npm i && npm start in both of the services (backend & frontend).
 2. Obtain an API key: You need to use your own OpenWeatherMap API key, which you can find here https://openweathermap.org/
 3. put the api key in the .backend/index.js 
    
