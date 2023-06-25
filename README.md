@@ -1,4 +1,4 @@
-#Weatherapp#
+# Weatherapp
 
 ### To run this app locally with Node.js, follow these steps:
 
