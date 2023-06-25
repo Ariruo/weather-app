@@ -1,0 +1,47 @@
+version: "3.8"
+services:
+  backend:
+    # Build the backend service using the Dockerfile in the './backend' directory
+    build: ./backend
+    # Set the container name for the backend service
+    container_name: backend
+   
+    # Map port 9000 on the host to port 9000 in the container
+    ports:
+      - "9000:9000"
+    # Mount the './backend' directory from the host to the '/app' directory in the container
+    volumes:
+      - ./backend:/app
+      - /app/node_modules
+   
+    # Specify the command to run for the backend service
+    
+     
+    
+
+  frontend:
+    # Build the frontend service using the Dockerfile in the './frontend' directory
+    build: ./frontend
+    # Set the container name for the frontend service
+    container_name: frontend
+    # Map port 3000 on the host to port 3000 in the container
+    ports:
+      - "3000:3000"
+    # Open the stdin for the frontend service
+    stdin_open: true
+    # Allocate a pseudo-TTY for the frontend service
+    tty: true
+    # Mount the './frontend' directory from the host to the '/app' directory in the container
+    volumes:
+      - ./frontend/src:/app/src
+    # Specify the command to run for the frontend service
+
+  
+    #  environment:
+    #    - REACT_APP_API_URL=http://example.com
+
+    depends_on:
+      - backend
+    
+    
+  

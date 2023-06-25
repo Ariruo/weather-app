@@ -1,0 +1,24 @@
+# Use the node:17-alpine base image
+FROM node:17-alpine
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the package.json file from the local directory to the container
+COPY package.json .
+
+# Install the dependencies
+RUN npm install
+
+# Copy the rest of the application code to the container
+COPY . .
+
+# Expose port 3000 for the application to listen on
+EXPOSE 3000
+
+#HERE you can change the react app api url endpoint to whatever you want
+ENV REACT_APP_API_URL=http://localhost:9000/api
+
+
+# Set the default command to run the application
+CMD ["npm", "start"]
