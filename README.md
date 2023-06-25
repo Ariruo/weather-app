@@ -1,4 +1,4 @@
-***Weatherapp***
+#Weatherapp#
 
 ### To run this app locally with Node.js, follow these steps:
 
@@ -9,6 +9,7 @@
 ### If you prefer to run the app via Docker, make sure you have Docker installed and follow these additional steps:
 
 1.Set up the API key: In the Dockerfile located in the ./backend folder, set your API key as an environment variable called APPID.
+
 2.Start the app: Go to the root folder and run docker-compose up command. This will build images and start the Docker containers, and the app should start running.
 
 in both of the scenarios the app should be runnin in "localhost:3000" 
@@ -16,10 +17,10 @@ in both of the scenarios the app should be runnin in "localhost:3000"
 
 ### i have saved you the trouble to get this amazing app runnin on aws cloud. Here is the documentation for it
 
-### AWS Documentation: Dockerizing and Deploying Weather Application on ECS
+### AWS Documentation: Dockerizing and Deploying this application on ECS
 
 1. Dockerization
-I dockerized a this weatherapp, separating the frontend and backend components into their own Docker images.
+I first dockerized the app, separating the frontend and backend components into their own Docker images.
 
 2. Pushing Images to ECR (Elastic Container Registry)
 I pushed the Docker images to ECR for storing and managing the container images.
