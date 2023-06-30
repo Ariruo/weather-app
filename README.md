@@ -41,5 +41,5 @@ I ensured that both the frontend and backend tasks are running on the same VPC. 
 7. Application Load Balancer (ALB)
 I created an Application Load Balancer to distribute traffic between the frontend and backend components. and that they have solid DNS host.
 
-### [WeatherApp on AWS](http://fronttibalancer-964227170.us-east-1.elb.amazonaws.com/?fbclid=IwAR2FeNnN5OfeMHP65PtxQycRarR7W75NWS4MpO90yVtRx9t76X4a9rH9WT8)
+
 
