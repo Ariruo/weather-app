@@ -17,29 +17,3 @@
 
 
 
-
-### Here's how i deployed this app on the AWS cloud
-
-1. Dockerization
-I first dockerized the app, separating the frontend and backend components into their own Docker images.
-
-2. Pushing Images to ECR (Elastic Container Registry)
-I pushed the Docker images to ECR for storing and managing the container images.
-
-3. Creating ECS Cluster
-I created a new ECS (Elastic Container Service) cluster to host the application.
-
-4. Creating Fargate Services
-I created two Fargate services to separate the frontend and backend components.
-
-5. Creating Task Definitions
-I created task definitions for both the frontend and backend components.
-
-6. Network Configuration
-I ensured that both the frontend and backend tasks are running on the same VPC. I also opened all necessary ports in security group
-
-7. Application Load Balancer (ALB)
-I created an Application Load Balancer to distribute traffic between the frontend and backend components. and that they have solid DNS host.
-
-
-
